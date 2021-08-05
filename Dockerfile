@@ -37,4 +37,8 @@ RUN mamba install --quiet --yes 'spylon-kernel=0.4*' && \
     fix-permissions "${CONDA_DIR}" && \
     fix-permissions "/home/${NB_USER}"
 
+
 COPY notebooks/*.ipynb "/home/${NB_USER}"
+
+RUN mkdir -p "/home/${NB_USER}/resources"
+COPY resources/*.* "/home/${NB_USER}/resources/"
