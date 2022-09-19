@@ -537,5 +537,7 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
+*.zip
+*.Identifier
 
 # End of https://www.toptal.com/developers/gitignore/api/python,jupyternotebooks,pycharm,pycharm+all,intellij,intellij+all,linux,windows,visualstudiocode,vim,virtualenv
