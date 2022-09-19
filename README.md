@@ -3,7 +3,7 @@
 ## Clone repository
 
 ```
-git clone
+git clone https://github.com/krzesii/spark-sandbox.git
 ```
 
 ## Build docker image
