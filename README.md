@@ -17,3 +17,7 @@ docker build --pull --rm -f "Dockerfile" -t sparksandbox:latest "."
 ```
 docker run -p 8888:8888 sparksandbox:latest
 ```
+
+# References
+
+[references.md](notebooks/references.md)
