@@ -1,13 +1,18 @@
-# Spark sandbox docker image
+# Install instructions
 
-Docker image to demonstrate basic Spark operations
-# Build docker image
+## Clone repository
+
+```
+git clone
+```
+
+## Build docker image
 
 ```
 docker build --pull --rm -f "Dockerfile" -t sparksandbox:latest "."
 ```
 
-# Run docker container
+## Run docker container
 
 ```
 docker run -p 8888:8888 sparksandbox:latest
