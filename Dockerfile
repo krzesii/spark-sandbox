@@ -16,7 +16,6 @@ RUN apt-get update --yes && \
     gcc && \
     apt-get clean && rm -rf /var/lib/apt/lists/*
 
-USER ${NB_UID}
 
 # R packages including IRKernel which gets installed globally.
 RUN mamba install --quiet --yes \
@@ -42,3 +41,9 @@ COPY notebooks/*.ipynb "/home/${NB_USER}"
 
 RUN mkdir -p "/home/${NB_USER}/resources"
 COPY resources/*.* "/home/${NB_USER}/resources/"
+COPY notebooks/ "/home/${NB_USER}/notebooks/"
+
+RUN chown -R ${NB_USER} "/home/${NB_USER}/notebooks/"
+RUN chmod 755 "/home/${NB_USER}/notebooks/"
+
+USER ${NB_UID}

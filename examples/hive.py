@@ -1,4 +1,6 @@
 # source https://spark.apache.org/docs/latest/sql-data-sources-hive-tables.html
+# for python sql templating - jinjasql2
+
 
 from os.path import abspath
 from pyspark.sql import SparkSession
@@ -11,7 +13,7 @@ spark = SparkSession \
     .builder \
     .appName("Python Spark SQL Hive integration example") \
     .config("spark.sql.warehouse.dir", warehouse_location) \
-    .enableHiveSupport() \
+    #.enableHiveSupport() \
     .getOrCreate()
 
 # spark is an existing SparkSession
