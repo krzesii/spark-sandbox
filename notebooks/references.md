@@ -3,3 +3,4 @@
 * [SparkHandsOn] Best Hands-on Big Data Practices with PySpark & Spark Tuning by Amin Karami (PhD, FHEA)
 * [Torino] Big Data: Architectures And Data Analytics (2019/2020)
 * [CERNSpark] CERN Spark Course https://swan-gallery.web.cern.ch/apache_spark/
+* [SparkWithPython] Tirthajyoti Sarkar, Sunnyvale, CA, Oct 2018 https://github.com/tirthajyoti/Spark-with-Python
