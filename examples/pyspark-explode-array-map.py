@@ -50,5 +50,11 @@ df.select(df.name,posexplode_outer(df.knownLanguages)).show()
 """ with map """
 df.select(df.name,posexplode_outer(df.properties)).show()
 
+df.write()
 
 """END"""
+
+
+def some_transformation(inputdataframe):
+    outpuddataframe = inputdataframe.sometransformations
+    return outpuddataframe
