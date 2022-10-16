@@ -20,4 +20,6 @@ docker run -p 8888:8888 sparksandbox:latest
 
 # References
 
-This repository contains multiple examples sourced from multiple sources with some modifications, for details please see [references.md](notebooks/references.md)
+
+This is collection of examples sourced from multiple sources with some modifications, for details please see [references.md](notebooks/references.md)
+
