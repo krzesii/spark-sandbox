@@ -13,6 +13,7 @@ RUN apt-get update --yes && \
     apt-get install --yes --no-install-recommends \
     fonts-dejavu \
     gfortran \
+    netcat \
     gcc && \
     apt-get clean && rm -rf /var/lib/apt/lists/*
 
