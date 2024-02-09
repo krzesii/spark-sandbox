@@ -13,6 +13,7 @@ RUN apt-get update --yes && \
     apt-get install --yes --no-install-recommends \
     fonts-dejavu \
     gfortran \
+    vim \
     netcat \
     gcc && \
     apt-get clean && rm -rf /var/lib/apt/lists/*
@@ -20,9 +21,11 @@ RUN apt-get update --yes && \
 
 # R packages including IRKernel which gets installed globally.
 RUN mamba install --quiet --yes \
-    'r-base=4.1.0' \
+    'r-base=4.2' \
     'r-ggplot2=3.3*' \
-    'r-irkernel=1.2*' \
+    'r-irkernel=1.3.2*' \
+    'pytest' \
+    'ipytest' \
     'r-rcurl=1.98*' \
     'r-sparklyr=1.7*' && \
     mamba clean --all -f -y && \
