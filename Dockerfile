@@ -47,11 +47,15 @@ RUN mkdir -p "/home/${NB_USER}/resources"
 COPY resources/*.* "/home/${NB_USER}/resources/"
 COPY notebooks/ "/home/${NB_USER}/notebooks/"
 COPY exercises/ "/home/${NB_USER}/exercises/"
+COPY exercises/ "/home/${NB_USER}/flights_project/"
 
 RUN chown -R ${NB_USER} "/home/${NB_USER}/notebooks/"
 RUN chmod 755 "/home/${NB_USER}/notebooks/"
 
 RUN chown -R ${NB_USER} "/home/${NB_USER}/exercises/"
 RUN chmod 755 "/home/${NB_USER}/exercises/"
+
+RUN chown -R ${NB_USER} "/home/${NB_USER}/flights_project/"
+RUN chmod 755 "/home/${NB_USER}/flights_project/"
 
 USER ${NB_UID}
